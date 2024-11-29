@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWAL BOOK GALLERY</title>
+  <link rel="icon" href="../book photos/3-swall.jpg">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/review.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/slide.css">
+  <link rel="stylesheet" href="../styles/star.css">
+  <link rel="stylesheet" href="../styles/loading.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+      <!--This is the loading effect-->
+  <div class="gif-container" id="loading-overlay">
+    <img id="gif-image" src="../Gif/giphy (1).webp" alt="GIF Image">
+  </div>
+  <div id="the-whole-container">
+         <!--this is the search bar-->
+               <!--=============== HEADER ===============-->
+               <header class="header">
+                <nav class="nav container">
+                   <div class="nav__data">
+                      <a href="#" class="nav__logo">
+                          <img class="nav-logo-image" src="../book photos/5-swal.png" alt="">
+                      </a>
+                      
+                      <div class="nav__toggle" id="nav-toggle">
+                         <i class="ri-menu-line nav__burger"></i>
+                         <i class="ri-close-line nav__close"></i>
+                      </div>
+                   </div>
+        
+                   <!--=============== NAV MENU ===============-->
+                   <div class="nav__menu" id="nav-menu">
+                      <ul class="nav__list">
+        
+                       <li id="search"> 
+                        <div class="sidebody">
+                        <div class="searchBar">
+                            <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                        </div>
+                    </div>
+                      <div id="root"></div>
+                    </li>
+        
+        
+                         <li><a href="../main page/mainpage.html" class="nav__link">Home</a></li>
+        
+                        
+        
+                         <!--=============== DROPDOWN 1 ===============-->
+                         <li class="dropdown__item">
+                            <div class="nav__link" >
+                             
+                                <a class="scroll"  href="../bookwebsite/categoriespage.html">Book Genre <i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                            </div>
+        
+                            <ul class="dropdown__menu">
+                               <li>
+                                  <a href="../categoriesinfo/fiction.html"   class="dropdown__link">
+                                     <i class="ri-pie-chart-line"></i> 
+                                    Fiction
+                                  </a>                          
+                               </li>
+        
+                               <li>
+                                  <a href="../categoriesinfo/nonfiction.html" class="dropdown__link">
+                                     <i class="ri-arrow-up-down-line"></i>Non-fiction
+                                  </a>
+                               </li>
+                               <li>
+                                <a href="../categoriesinfo/translate.html" class="dropdown__link">
+                                   <i class="ri-user-line"></i> Translate
+                                </a>                          
+                              </li>
+                              <li>
+                                <a href="../categoriesinfo/poem.html" class="dropdown__link">
+                                   <i class="ri-user-line"></i> Poem
+                                </a>                          
+                              </li>
+                              <li>
+                                <a href="../categoriesinfo/newrelease.html" class="dropdown__link">
+                                   <i class="ri-user-line"></i> New Books New Release!
+                                </a>                          
+                              </li>
+                              <li>
+                                <a href="../categoriesinfo/bestprice.html" class="dropdown__link">
+                                   <i class="ri-user-line"></i> Best Prize Sales(20%-50%)
+                                </a>                          
+                              </li>
+                              <li>
+                                <a href="../categoriesinfo/EditorchoiceMarch.html" class="dropdown__link">
+                                   <i class="ri-user-line"></i> Editor-Choice-Book-March
+                                </a>                          
+                              </li>
+                              <li>
+                                <a href="../categoriesinfo/Toprated.html" class="dropdown__link">
+                                   <i class="ri-user-line"></i>Top-Rated_Books
+                                </a>                          
+                              </li>
+                              <li>
+                                <a href="../categoriesinfo/Editorchoice.html" class="dropdown__link">
+                                   <i class="ri-user-line"></i>Editor-choice-books
+                                </a>                          
+                              </li>
+                              <li>
+                                <a href="../categoriesinfo/Popular.html" class="dropdown__link">
+                                  <i class="ri-user-line"></i>Popular-Books
+                        </a>                          
+                      </li>
+                      <li>
+                        <a href="../categoriesinfo/Goodfic.html" class="dropdown__link">
+                           <i class="ri-user-line"></i>Good-Fiction-Books
+                        </a>                          
+                      </li>
+                      <li>
+                        <a href="../categoriesinfo/goodnon.html" class="dropdown__link">
+                           <i class="ri-user-line"></i>Good-Non-Fiction-Books
+                        </a>                          
+                      </li>
+                      <li>
+                        <a href="../categoriesinfo/goodyoung.html" class="dropdown__link">
+                           <i class="ri-user-line"></i>Goods-Books-For-Young
+                        </a>                          
+                      </li>
+                      
+                      <li>
+                        <a href="../categoriesinfo/Goodbusiness.html" class="dropdown__link">
+                           <i class="ri-user-line"></i>Good-Business-Books
+                        </a>                          
+                      </li>
+                      <li>
+                        <a href="../categoriesinfo/Goodpolitics.html" class="dropdown__link">
+                           <i class="ri-user-line"></i>Good Books on --Politics-And-Thought-Books
+                        </a>                          
+                      </li>
+                      <li>
+                        <a href="../categoriesinfo/Goodstrength.html" class="dropdown__link">
+                           <i class="ri-user-line"></i>Good Books that will give you strength
+                        </a>                          
+                      </li>
+                      <li>
+                        <a href="../categoriesinfo/Refrencewomen.html" class="dropdown__link">
+                           <i class="ri-user-line"></i>Refrence books-for-women
+                        </a>                          
+                      </li>
+                      <li>
+                        <a href="../categoriesinfo/bestselling2023.html" class="dropdown__link">
+                           <i class="ri-user-line"></i>Best-selling-2023-books
+                        </a>                          
+                      </li>
+                      
+                    </ul>
+                 </li>
+                 
+ 
+                 <!--=============== DROPDOWN 2 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="../profile/" class="dropdown__link">
+                             <i class="ri-user-line"></i> Profiles
+                          </a>                          
+                        </li>
+
+                      
+
+                       <li>
+                          <a href="../commentbox/commentbox.html" class="dropdown__link">
+                             <i class="ri-message-3-line"></i> Messages
+                          </a>
+                       </li>
+                    </ul>
+                 </li>
+                 <li class="dropdown__item">
+                  <div class="nav__link" >
+                      <a  class="scroll" href="../authorpage/author.html">Author<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                  </div>
+
+                  <ul class="dropdown__menu">
+                     <li>
+                        <a href="../authorpage/alinkar.html" class="dropdown__link">
+                           <i class="ri-user-line"></i> Aliinkar
+                        </a>                          
+                      </li>
+                      <li>
+                        <a href="../authorpage/chanmyaewin.html" class="dropdown__link">
+                           <i class="ri-message-3-line"></i>ChanMyaeWin 
+                        </a>
+                     </li>
+                     <li>
+                      <a href="../authorpage/hsuchiko.html" class="dropdown__link">
+                         <i class="ri-message-3-line"></i>Hsuchiko
+                      </a>
+                   </li>
+                   <li>
+                    <a href="../authorpage/HtetkKhatnin.html" class="dropdown__link">
+                       <i class="ri-message-3-line"></i>HtetKKhaing
+                    </a>
+                 </li>
+                 <li>
+                  <a href="../authorpage/kaungpyae.html" class="dropdown__link">
+                     <i class="ri-message-3-line"></i>KaungPyae
+                  </a>
+               </li>
+              <li>
+                <a href="../authorpage/mallwint.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Mallwint
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/mghsushin.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>MgHsuShin
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/mgmoethu.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Mg Moe Thu
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/Minkhant.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Min Khant
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/moeshin.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Moe Shin
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/monhoulsi.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>MonHoulsi
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/Myakyay.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Mya Kyay
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/myathantint.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Mya Than Tint
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/myolwin.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Myo Lwin
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/myothant.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Myo Thant
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/nineninesnay.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Nine Nine Sanay
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/nuenueaung.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Nue Nue Aung
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/Nunuyi.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Nu Nu Yi
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/nwaylineain.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Nway Lin Eain
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/pencil.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Pencil
+                </a>
+              </li> <li>
+                <a href="../authorpage/shweoodung.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Shwe Oo Daung
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/sumyat.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Su Myat
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/thanar.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Thanar
+                </a>
+              </li>
+              
+              <li>
+                <a href="../authorpage/uninaymin.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Nay Win(University)
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/writers.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Writer
+                </a>
+              </li>
+              <li>
+                <a href="../authorpage/zayyar.html" class="dropdown__link">
+                   <i class="ri-message-3-line"></i>Zayyar
+                </a>
+              </li>
+                  </ul>
+               </li>
+
+                 <li><a href="../wonsaungmhu/woungsaung.html" class="nav__link">OurService</a></li>
+              </ul>
+           </div>
+        </nav>
+     </header>
+     <div class="main">
+      <div>
+        <img class="review" src="../photo/midnight-blue-300x300 (1).png" alt="">
+      </div>
+      <div class="right">
+        <p class="word">Why do we read books? Ask yourself. I want to improve my life. I want lessons, If you want to be disciplined, etc., this book will not be suitable for you. Midnight Blue gives you life lessons, admonitions Improvements will not be provided. Instead, questions about why we are still alive in life. A person's undisguised feelings, You have to feel the views of a man (Wa) on the love of a woman.
+
+          Regarding the book, Ko Pa (Mantalay) has commented like this.
+          
+          "I was attracted to Mae Thuy's abstract and friendly writing from the first book. Midnight Blue has 12 short songs.
+          
+          The woman in the other room At the end of the six cliffs, The Steak, room number (606); That man slow burn A woman who committed suicide The Last Memories hours five women; With 11 short songs called Aye... It includes a poem called Happy Wife.
+          
+          Mae Thuy's writings, content and thoughts are outdated rather than modern. If you say it's not Burmese rice, it's Western rice.
+          I don't think that readers who like the story plot and the beauty of the text will like it.
+          
+          In addition, people in Burma think about suicide and kill themselves. Because they are people who are not emotionally strong enough to commit suicide. The majority of Burmese social communities are people who live alone without companions and friends, so it does not reach the level of feeling lonely.
+          
+          It is not enough to say, "I can feel it in my heart, but she can see it." It's a community where you can confide in close friends. Even if the person concerned doesn't say anything, he has the character to stubbornly ask and find out, and stubbornly solve it, so he doesn't reach the level of suicide.
+          
+          I don't have the courage to brutally kill others. I have been torn apart by hell since I was a child, so I don't kill others.
+          It will be difficult for everyone to like content composed of abstract and friendly feelings about killing yourself, killing your lover, and daring to kill someone who hates you.
+          But in the current situation, the apartment culture has flourished in Myanmar.
+          
+          The number of people living alone, regardless of gender, has increased.
+          It has come to separate one by one from the human field, which everyone knows in the East (7) house and the West (7) house, like a long time ago. In big cities like Mandalay, Yangon, there are people who don't know who is in the room and what is going on.
+          
+          So the diseases of being lonely and not having someone to confide in have already penetrated the mind.
+          Regarding the issue of sex, the idea that virgins cannot give up before marriage, which has been handed down by our ancestors, has been broken by the needs of the times for years.
+          
+          They don't spend a lot of money on sexual pleasure and end their lives. They no longer bet tens of thousands of dollars for a momentary feeling. They are no longer worried about temporary comfort. But people are a class with a high desire to possess.
+          
+          We Orientals have a higher desire to possess than the people of the West.
+          But they didn't realize that the results of unfulfillment followed behind this treatment.
+          That's when abstracts that people can't see start to stick. After reading this midnight blue book, I think you will understand these things better.
+          
+          Now if I said yes or no, let's see if you read this little book.
+
+
+        </p><hr>
+        <table  width="100%">
+          <tr>
+            <th>Book Name   :</th>
+            <th>Midnight Blue</th>
+            
+          </tr>
+          <tr>
+            <th>Author  :</th>
+            <th>Ml lwint</th>
+          </tr>
+          <tr>
+            <th>Prize  :</th>
+            <th>3500MMK</th>
+          </tr>
+        </table>
+        <br><br>
+        <div>
+         <a href="../buyform/pre.html">
+         <button class="add-to-cart-btn" type="submit">
+           <i class="fa-solid fa-cart-shopping"></i>
+         </button></a>
+        </div> 
+  
+       <div class="star-rating">
+         <button class="star">&#9734;</button>
+         <button class="star">&#9734;</button>
+         <button class="star">&#9734;</button>
+         <button class="star">&#9734;</button>
+         <button class="star">&#9734;</button>
+       </div>
+      </div>
+    </div>
+        
+              <div id="wrapper">
+                <div class="container">
+                  <div class="slider-wrapper">
+                    <button id="prev-slide" class="slide-button material-symbols-rounded">
+                      chevron_left
+                    </button>
+                    <ul class="image-list">
+                      <a href="../review/river in darkness.html"><img class="image-item" src="../photo/A-River-in-darkness-1-300x300.png" alt="img-1" /></a>
+                      <a href="../review/darkness.html"><img class="image-item" src="../photo/darkness-300x300.png" alt="img-2" /></a>
+                      <a href="../review/exodus.html"><img class="image-item" src="../photo/exodus-1-300x300.png" alt="img-3" /></a>
+                      <a href="../review/missin"><img class="image-item" src="../photo/Missing-2-300x300.png" alt="img-4" /></a>
+                      <a href="../review/the words to say my  mother.html"></a><img class="image-item" src="../photo/Amay-1-300x300.webp" alt="img-5" /></a>
+                      <a href="../review/sate.html"></a><img class="image-item" src="../photo/sate-300x300.png" alt="img-6" /></a>
+                      <a href="../review/eain mat.html"></a><img class="image-item" src="../photo/Eainmet-s.png" alt="img-7" /></a>
+                    </ul>
+                    <button id="next-slide" class="slide-button material-symbols-rounded">
+                      chevron_right
+                    </button>
+                  </div>
+                  <div class="slider-scrollbar">
+                    <div class="scrollbar-track">
+                      <div class="scrollbar-thumb"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <footer class="footer">
+                <div class="container">
+                  <div class="row">
+                    <div class="footer-col">
+                      <h4>Our services</h4>
+                      <ul>
+                        <li><a href="../wonsaungmhu/woungsaung.html">Get help</a></li>
+                        <li><a href="../wonsaungmhu/woungsaung.html">our services</a></li>
+                        <li><a href="../privacypolicy/privacypolicy.html">privacy policy</a></li>
+                     
+                      </ul>
+                    </div>
+                    <div class="footer-col">
+                      <h4>Quick links</h4>
+                      <ul>
+                        <li><a href="../main page/mainpage.html">Home</a></li>
+                        <li><a href="../bookwebsite/categoriespage.html">Categories</a></li>
+                        <li><a href="../Aboutus/aboutus.html">About us</a></li>
+                        <li><a href="../contact/contact.html">Contact us</a></li>
+                    
+                      </ul>
+                    </div>
+                    <div class="footer-col">
+                      <h4>Categories</h4>
+                      <ul>
+                        <li><a href="../bookwebsite/categoriespage.html">Book genre</a></li>
+                        <li><a href="../authorpage/author.html">Author</a></li>
+                      
+                      </ul>
+                    </div>
+                    <div class="footer-col">
+                      <h4>follow us</h4>
+                      <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+              <footer class="copyright">
+              <p>&copy; 2024 Project Portfolio. All rights reserved.</p>
+              </footer>
+            
+            </div>
+      <script src="../script/navbar.js"></script>
+      <script src="../script/loading.js"></script>
+      <script src="../script/search.js"></script>
+      <script src="../script/slide.js"></script>
+      <script src="../script/star.js"></script>
+</body>
+</html>

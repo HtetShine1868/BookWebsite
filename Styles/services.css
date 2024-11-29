@@ -1,0 +1,120 @@
+
+body{
+    background-color: #e7e8d1;
+}
+.wrapper{
+    max-width: 950px;
+    padding: 100px;
+    margin-left: 200px;
+    margin-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: inherit;
+    font-weight: inherit;
+}
+.column{
+    display: flex;
+    flex-direction: column;  
+
+}
+.roww{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 1px silver;
+    border-radius: 14px;
+    background-color:#a2d5c6;
+    border-bottom: 2px solid #eee;
+    background-color: transparent;
+    animation: scaleIn 0.5s ease-in-out;
+    transition: transform 0.3s ease;
+}
+.roww:hover {
+    transform: translateY(-15px);
+ }
+p{
+    margin: 0 0 10px;
+}
+.olol{
+    width: 25%;
+    margin: 30px auto;
+    height: 200px;
+}
+.info{
+    margin-top: 30px;
+    margin-left: 40px;
+    justify-content: center;
+    margin-right: 50px;
+    font-size: 15px;
+    line-height: 1.8em;
+    letter-spacing: normal;
+}
+h2{
+     color: #1e73be;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.cardgift{
+    width: 25%;
+    height: 220px;
+}
+/* Styles for larger screens */
+/* Styles for small screens */
+/* Styles for small screens */
+/* Styles for screens that are 400px wide or less */
+/* Styles for screens that are 400px wide or less */
+@media screen and (max-width: 400px) {
+
+    /* Adjust the layout of the navigation bar for small screens */
+    .nav {
+      flex-direction: column;
+    }
+  
+    /* Adjust the layout of the main content section for small screens */
+    .wrapper {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Adjust the layout of the footer for small screens */
+    .footer {
+      flex-direction: column;
+    }
+  }
+  
+  /* Styles for screens that are between 400px and 768px wide */
+  @media screen and (min-width: 400px) and (max-width: 768px) {
+  
+    /* Adjust the layout of the navigation bar for medium screens */
+    .nav {
+      flex-direction: row;
+    }
+  
+    /* Adjust the layout of the main content section for medium screens */
+    .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /* Adjust the layout of the footer for medium screens */
+    .footer {
+      flex-direction: row;
+    }
+  }
+  
+  /* Styles for screens that are 768px wide or greater */
+  @media screen and (min-width: 768px) {
+  
+    /* Adjust the layout of the navigation bar for large screens */
+    .nav {
+      flex-direction: row;
+    }
+  
+    /* Adjust the layout of the main content section for large screens */
+    .wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    /* Adjust the layout of the footer for large screens */
+    .footer {
+      flex-direction: row;
+    }
+  }

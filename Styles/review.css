@@ -1,0 +1,96 @@
+body{
+  background-color: #e7e8d1;
+}
+.main{
+ display:flex;
+ width:80%;
+ flex-direction: row;
+ margin:0 auto;
+ position:relative;
+ left:-17px;
+ text-align:center;
+ margin-top:50px;
+ margin-bottom:20px;
+}
+.right{
+ display:flex;
+ flex-direction:column;
+ background-color:#a2d5c6;
+ border-radius:20px;
+ margin-top:20px;
+ padding:100px 50px;
+}
+.word{
+  color:#d85042;
+  font-style:italic;
+  margin-bottom:50px;
+}
+
+.review{
+ float:right;
+ width:400px;
+ height:auto;
+}
+/* Styles for larger screens */
+@media screen and (min-width: 1200px) {
+ .main {
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+ }
+
+ .right {
+   margin-left: 20px;
+ }
+}
+
+/* Styles for medium screens */
+@media screen and (max-width: 1199px) {
+ .main {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .right {
+   margin-left: 0;
+   margin-top: 20px;
+ }
+}
+
+
+/* Styles for smaller screens */
+@media screen and (max-width: 767px) {
+ .main {
+   width: 100%;
+   margin-left: 0;
+   margin-right: 0;
+ }
+
+ .right {
+   opacity: 0;
+   transform: translateX(100%);
+   animation: slideInRight 1s ease-in-out forwards;
+ }
+}
+ table{
+   border-collapse: collapse;
+
+ }
+
+/* Styles for 360px screens */
+@media screen and (max-width: 360px) {
+ .main {
+   font-size: 14px;
+ }
+}
+
+@keyframes slideInRight {
+ 0% {
+   opacity: 0;
+   transform: translateX(100%);
+ }
+ 100% {
+   opacity: 1;
+   transform: translateX(0);
+ }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page With Light/Dark Mode</title>
+    <link rel="stylesheet" href="../styles/landingpage.css" />
+  </head>
+  <body>
+    <main>
+      <div class="big-wrapper light">
+        <img src="../photo/shape (1).png" alt="" class="shape" />
+
+        <header>
+          <div class="container">
+            <div class="logo">
+              <img src="../photo/logo.png" alt="Logo" class="logo" />
+              <h3>SWAL BOOK GALLERY</h3>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="../mainpage/mainpage.html">Home</a></li>
+                <li><a href="../contact/contact.html">Contact us</a></li>
+                <li><a href="../Aboutus/aboutus.html">About us</a></li>
+                <li><a href="../loginpage/signup.html" class="btn">Register</a></li>
+              </ul>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+
+        <div class="showcase-area">
+          <div class="container">
+            <div class="left">
+              <div class="big-title">
+                <h1>Future is here,</h1>
+                <h1>Start Exploring now.</h1>
+              </div>
+              <p class="text">
+                Dive into a world where innovation meets imagination, where knowledge sparks transformation, and where the pulse of the future beats on every page. Whether you seek the thrill of speculative fiction or the insights of groundbreaking non-fiction, our carefully curated library is your gateway to the limitless horizons of what's to come.
+              </p>
+              <div class="cta">
+                <a href="../main page/mainpage.html" class="btn">Get started</a>
+              </div>
+            </div>
+
+            <div class="right">
+              <img src="../photo/person.png" alt="Person Image" class="person" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-area">
+          <div class="container">
+            <button class="toggle-btn">
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+        var toggle_btn;
+        var big_wrapper;
+        var hamburger_menu;
+        
+        function declare() {
+          toggle_btn = document.querySelector(".toggle-btn");
+          big_wrapper = document.querySelector(".big-wrapper");
+          hamburger_menu = document.querySelector(".hamburger-menu");
+        }
+        
+        const main = document.querySelector("main");
+        
+        declare();
+        
+        let dark = false;
+        
+        function setModePreference(mode) {
+          document.cookie = `modePreference=${mode}; path=/`;
+        }
+        
+        function getModePreference() {
+          const cookieValue = document.cookie
+            .split("; ")
+            .find(row => row.startsWith("modePreference="));
+            
+          if (cookieValue) {
+            return cookieValue.split("=")[1];
+          }
+          
+          return null;
+        }
+        
+        function toggleAnimation() {
+          dark = !dark;
+          let clone = big_wrapper.cloneNode(true);
+          
+          if (dark) {
+            clone.classList.remove("light");
+            clone.classList.add("dark");
+            setModePreference("dark");
+          } else {
+            clone.classList.remove("dark");
+            clone.classList.add("light");
+            setModePreference("light");
+          }
+          
+          clone.classList.add("copy");
+          main.appendChild(clone);
+        
+          document.body.classList.add("stop-scrolling");
+        
+          clone.addEventListener("animationend", () => {
+            document.body.classList.remove("stop-scrolling");
+            big_wrapper.remove();
+            clone.classList.remove("copy");
+            declare();
+            events();
+          });
+        }
+        
+        function applyModePreference() {
+          const modePreference = getModePreference();
+          
+          if (modePreference === "dark") {
+            dark = true;
+            toggleAnimation();
+          }
+        }
+        
+        function events() {
+          toggle_btn.addEventListener("click", toggleAnimation);
+          hamburger_menu.addEventListener("click", () => {
+            big_wrapper.classList.toggle("active");
+          });
+        }
+        
+        applyModePreference();
+        events();
+      </script>
+    
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="../script/landingpage.js"></script>
+  </body>
+</html>

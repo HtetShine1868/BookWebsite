@@ -1,0 +1,175 @@
+body{
+  background-color:#e7e8d1;
+  cursor:-webkit-grab;cursor:grab;
+}
+h2{
+  color:#d85042;
+  margin-bottom:40px;
+  cursor:-webkit-grab;cursor:grab;
+  font-style: italic;
+  font-weight: bold;
+  margin-left:30px;
+}
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333;  /* old IE */
+  background-color: #333;  /* Modern Browsers */
+}
+#the-whole-container{
+  background-color: #e7e8d1;
+}
+.body-section-head1,.body-section-head2{
+   display:flex;
+   width:80%;
+   flex-direction: row;
+   justify-content: center;
+   margin:0 auto;
+   position:relative;
+   left:-17px;
+   text-align:center;
+   margin-top:50px;
+   margin-bottom:20px;
+   cursor:pointer;
+   background-color: #e7e8d1;
+}
+.book{
+  height:auto;
+  max-width:130%;
+   margin:0 auto;
+   cursor:-webkit-grab;
+   cursor:grab;
+}
+/* img{
+  height:auto;
+} */
+.pre-order-books,.best-sale-books,.new-books,.published-flower-road-books,.best-selling-2023-books,.books-for-women,
+.strength-books,.politics-thought-books,.business-books,.young-books,.good-fiction-books,.good-non-fiction-books,
+.editor-choice-books,.popular-books,.top-rated-books,.editor-choice-feb-books{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  width:80%;
+  margin:0 auto;
+  position:relative;
+  left:-17px;
+  text-align:center;
+  align-items:center;
+  margin-bottom:20px;
+  cursor: pointer;
+  background-color:#e7e8d1;
+ }
+
+.find-out-more-button-link{
+color:red;
+}
+
+.center-button{
+display: flex;
+justify-content: center;
+}
+.find-out-more-button{
+background-color: green;
+color:white;
+text-align: center;
+margin-top:0;
+border-radius:30px;
+border:none;
+padding:10px 30px 10px 30px;
+margin-top:0;
+font-size:1em;
+margin-bottom:30px;
+cursor:pointer;
+}
+.first,.second,.third,.fourth,.fifth{
+  background-color:#e7e8d1;
+}
+  /* @media(max-width:500px){
+   .book{
+    max-width:140px;
+    width:140px;
+    margin-left:-10px;
+   } 
+ }
+ @media(max-width:580px){
+  .book{
+   max-width:140px;
+   width:140px;
+   margin-left:-13px;
+  }}
+@media(max-width:700px){
+  .book{
+   max-width:170px;
+   width:170px;
+   margin-left:-15px;
+  }
+} 
+ @media(max-width:768px){
+  .book{
+   max-width:210px;
+   width:210px;
+   margin-left:-15px;
+  }
+}
+@media(max-width:990px){
+  .book{
+   max-width:250px;
+   width:250px;
+   margin-left:23px;
+  }
+  }
+  
+  @media(max-width:1024px){
+  .book{
+   max-width:300px;
+   width:300px;
+   margin-left:-25px;
+  }
+  } */
+  .link{
+    text-decoration: none;
+    font-size:1.1em;
+    color:blue;
+  }
+  
+.searchBar {
+  width: 100%;
+  border-radius: 3px;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat(1fr);
+  overflow-y: scroll;
+  background-color: rgb(243, 231, 231);
+  position:relative;
+  right:auto;
+  top:25px;
+  width:500px;
+}
+.change{
+  background-color: #e7e8d1;
+}
+.arrow{
+  float:right;
+  position:relative;
+  bottom:100px;
+  right:60px;
+}
+.arrow-image{
+width:50px;
+height:50px;
+border-radius:50%;
+background-color: #d85042;
+
+}
+.link-is-link{
+  color:blue;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gT3U8jU75j5qwbI/Agq9mThFVC/nHhhETH1onkw5amg2mlg3qXgeKn267s+374c1a/JJTW/T5678Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../styles/signup.css">
+ 
+  
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../photo/logo.png" alt="Logo" class="logo" />
+        <h3>Danvo in a new branch</h3>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li><a href="../mainpage/mainpage.html">Home</a></li>
+          <li><a href="../contact/contact.html">Contact us</a></li>
+          <li><a href="../Aboutus/aboutus.html">About us</a></li>
+          <li><a href="../wonsaungmhu/woungsaung.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="overlay"></div>
+
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </header>
+  <h2>Signup</h2>
+  <form id="signup-form" autocomplete="on" >
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required>
+    <br><br>
+    <label for="password">Password:</label>
+    <div class="password-toggle">
+      <input type="password" id="password" required>
+      <button type="button" class="toggle-button" id="password-toggle-button">
+        <span class="eye-icon"><i class="fas fa-eye"></i></span>
+      </button>
+    </div>
+    <br><br>
+    <button type="submit">Sign up</button>
+  </form>
+  
+  <script src="../script/signup.js"></script>
+</body>
+</html>

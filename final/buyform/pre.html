@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="Contact form to email.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Read A Book & See The World From It</h2>
+    <form onsubmit="emailSend(); reset(); return false;">
+      <input type="text" id="name" placeholder="name" name="name" pattern="[A-Za-z\s]+" required>
+      <input type="text" id="phone" placeholder="phone" name="phone" pattern="09(45|97|26|79)[0-9]{6||7}" required>
+      <input type="email" id="email" placeholder="email" name="email" required>
+            <input type="text" id="bookname" placeholder="Book Name" name="bookname" required>
+            <input type="text" id="address" placeholder="Enter a full Address" name="address" required>
+            <input type="number" id="quantity" placeholder="Book quantity" name="quantity" required>
+            <input type="text" id="deli" placeholder="COD deli service you want to apply" name="deli" required >
+      <button type="submit" class="btn">submit</button>
+    </form>
+  </div> 
+  <button class="change-to-the-left"><a href="../main page/mainpage.html"><<< Back to Home</a> </button>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+  <script src="Contact form to email.js"></script>
+</body>
+</html>

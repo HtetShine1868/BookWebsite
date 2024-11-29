@@ -1,0 +1,25 @@
+.link{
+  text-decoration: none;
+  font-size:1.1em;
+}
+
+.searchBar {
+width: 100%;
+border-radius: 3px;
+padding: 9px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#root {
+width: 100%;
+display: grid;
+grid-template-columns:repeat(1fr);
+overflow-y: scroll;
+background-color: rgb(243, 231, 231);
+position:relative;
+right:auto;
+top:25px;
+width:500px;
+}
